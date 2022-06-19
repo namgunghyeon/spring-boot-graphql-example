@@ -1,4 +1,4 @@
-package com.graphql.demo.account.entity
+package com.graphql.api.account.entity
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue

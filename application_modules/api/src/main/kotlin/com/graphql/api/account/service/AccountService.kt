@@ -1,12 +1,12 @@
-package com.graphql.demo.account.service
+package com.graphql.api.account.service
 
 import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.interfaces.DecodedJWT
 import com.auth0.jwt.interfaces.JWTVerifier
-import com.graphql.demo.account.entity.Account
-import com.graphql.demo.account.entity.AccountRepository
-import com.graphql.demo.config.JwtUserDetails
-import com.graphql.demo.exception.BadTokenException
+import com.graphql.api.account.entity.Account
+import com.graphql.api.account.entity.AccountRepository
+import com.graphql.api.config.JwtUserDetails
+import com.graphql.api.exception.BadTokenException
 import org.springframework.security.authentication.AnonymousAuthenticationToken
 import org.springframework.security.core.Authentication
 import org.springframework.security.core.context.SecurityContext

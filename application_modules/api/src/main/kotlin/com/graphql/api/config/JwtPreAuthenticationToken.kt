@@ -1,4 +1,4 @@
-package com.graphql.demo.config
+package com.graphql.api.config
 
 import org.springframework.security.web.authentication.WebAuthenticationDetails
 import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken

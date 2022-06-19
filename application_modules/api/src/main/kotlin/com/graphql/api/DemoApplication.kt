@@ -1,4 +1,4 @@
-package com.graphql.demo
+package com.graphql.api
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

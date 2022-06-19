@@ -1,4 +1,4 @@
-package com.graphql.demo.resolver
+package com.graphql.api.resolver
 
 import com.graphql.demo.account.dto.AccountDto
 import org.springframework.graphql.data.method.annotation.Argument

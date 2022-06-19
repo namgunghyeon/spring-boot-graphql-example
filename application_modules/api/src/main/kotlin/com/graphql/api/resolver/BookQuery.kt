@@ -1,6 +1,6 @@
-package com.graphql.demo.resolver
+package com.graphql.api.resolver
 
-import com.graphql.demo.account.entity.Book
+import com.graphql.api.account.entity.Book
 import org.springframework.graphql.data.method.annotation.QueryMapping
 import org.springframework.web.bind.annotation.RestController
 

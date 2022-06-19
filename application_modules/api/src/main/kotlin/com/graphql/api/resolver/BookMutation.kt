@@ -1,4 +1,4 @@
-package com.graphql.demo.resolver
+package com.graphql.api.resolver
 
 import org.springframework.graphql.data.method.annotation.MutationMapping
 import org.springframework.security.access.prepost.PreAuthorize

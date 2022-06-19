@@ -1,6 +1,6 @@
-package com.graphql.demo.config
+package com.graphql.api.config
 
-import com.graphql.demo.account.service.AccountService
+import com.graphql.api.account.service.AccountService
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource
 import org.springframework.stereotype.Service

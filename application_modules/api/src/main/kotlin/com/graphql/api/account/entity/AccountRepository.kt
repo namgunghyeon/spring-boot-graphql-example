@@ -1,4 +1,4 @@
-package com.graphql.demo.account.entity
+package com.graphql.api.account.entity
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository

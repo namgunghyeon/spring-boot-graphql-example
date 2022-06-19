@@ -1,4 +1,4 @@
-package com.graphql.demo.exception
+package com.graphql.api.exception
 
 class BadTokenException(): RuntimeException() {
     override val message: String

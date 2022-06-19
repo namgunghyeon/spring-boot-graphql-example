@@ -1,4 +1,4 @@
-package com.graphql.demo.config
+package com.graphql.api.config
 
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
