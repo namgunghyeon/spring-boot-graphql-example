@@ -1,1 +1,5 @@
 
+security:
+  passwordStrength: 10
+  tokenSecret: "testsetset"
+  tokenIssuer: "test"

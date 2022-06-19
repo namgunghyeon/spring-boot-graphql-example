@@ -3,8 +3,8 @@ type Query {
 }
 
 type Mutation {
-    createAccount: AccountDto
-    login(email: String!, password: String!): AccountDto
+    createAccount(email: String!, password: String!): AccountDto
+    login(email: String!, password: String!): String
 }
 
 type AccountDto {
