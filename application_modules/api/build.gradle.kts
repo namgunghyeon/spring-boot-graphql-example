@@ -1,7 +1,10 @@
 plugins {
+    id("org.jetbrains.kotlin.plugin.jpa") version "1.6.21"
 }
 
 dependencies {
+    implementation(project(":domain_modules:rds-domain"))
+
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-graphql")

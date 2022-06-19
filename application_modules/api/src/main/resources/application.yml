@@ -1,4 +1,12 @@
 
+spring:
+  application:
+    name: graphql-api
+  profiles:
+    active: local
+    include:
+      - rds-domain
+
 security:
   passwordStrength: 10
   tokenSecret: "testsetset"

@@ -5,13 +5,13 @@ import com.auth0.jwt.algorithms.Algorithm
 import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.interfaces.DecodedJWT
 import com.auth0.jwt.interfaces.JWTVerifier
-import com.graphql.api.account.entity.Account
-import com.graphql.api.account.entity.AccountRepository
+import com.graphql.rds_domain.account.entity.Account
 import com.graphql.api.config.JwtUserDetails
 import com.graphql.api.config.SecurityConfiguration
 import com.graphql.api.config.SecurityProperties
 import com.graphql.api.exception.BadTokenException
 import com.graphql.api.exception.UserAlreadyExistsException
+import com.graphql.rds_domain.entity.AccountRepository
 import org.springframework.security.authentication.AnonymousAuthenticationToken
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.authentication.BadCredentialsException
