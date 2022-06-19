@@ -23,6 +23,9 @@ class AccountMutation(
         @Argument("password") password: String
     ): AccountDto {
         val account = accountService.createAccount(email, password)
+        println(account.id)
+        println(account.name)
+        println(account.email)
         return AccountDto(account.id!!, account.name, account.email)
     }
 

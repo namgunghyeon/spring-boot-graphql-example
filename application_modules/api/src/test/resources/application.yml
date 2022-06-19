@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: graphql-api
+  profiles:
+    active: test
+    include:
+      - rds-domain
+
+  sql:
+    init:
+      platform: local

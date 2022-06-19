@@ -12,6 +12,7 @@ import com.graphql.api.config.SecurityProperties
 import com.graphql.api.exception.BadTokenException
 import com.graphql.api.exception.UserAlreadyExistsException
 import com.graphql.rds_domain.entity.AccountRepository
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.authentication.AnonymousAuthenticationToken
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.authentication.BadCredentialsException
