@@ -121,7 +121,6 @@ class AccountService(
         return try {
             Optional.of(jwtVerifier.verify(token))
         } catch (ex: JWTVerificationException) {
-            println(ex)
             Optional.empty()
         }
     }

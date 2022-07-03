@@ -19,10 +19,8 @@ import org.springframework.test.web.servlet.post
 
 @AutoConfigureMockMvc
 @SpringBootTest
-//@GraphQlTest(controllers = [DemoApplication::class])
 class AccountTests @Autowired constructor(
     private val mockMvc: MockMvc
-    //private val graphQlTester: GraphQlTester
 ) {
     @Test
     fun test() {
@@ -31,32 +29,5 @@ class AccountTests @Autowired constructor(
             content = "{\"query\":\"mutation {\\n    createAccount(email: \\\"emai1l\\\", password: \\\"password\\\") {\\n        name,\\n        id,\\n        token\\n    }\\n}\",\"variables\":{}}"
         }.asyncDispatch().andDo { print() }.andExpect { status { isOk() } }.andReturn().response.contentAsString
         println(resString)
-        //val client = WebTestClient.bindToApplicationContext(context)
-        //    .configureClient()
-        //    .baseUrl("/graphql")
-        //    .build()
-
-        //val tester = HttpGraphQlTester.create(client)
-
-        //val client = WebTestClient.bindToServer()
-        //    .baseUrl("http://localhost:8080/graphql")
-        //    .build()
-
-        //val tester = HttpGraphQlTester.create(client)
-        /*
-        val createAccount: String = "mutation {\n" +
-                "    createAccount(email: \"email\", password: \"password\") {\n" +
-                "        name,\n" +
-                "        id,\n" +
-                "        token\n" +
-                "    }\n" +
-                "}"
-
-        val res = graphQlTester
-            .document(createAccount)
-            .execute()
-            //.path("createAccount")
-            //.hasValue()
-        */
     }
 }
